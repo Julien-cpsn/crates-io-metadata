@@ -137,3 +137,7 @@ pub struct Category {
     pub crates_cnt: u32,
 }
 ```
+
+## License
+
+The MIT license for this project can be seen [here](https://github.com/Julien-cpsn/crates-io-metadata/blob/main/LICENSE)
