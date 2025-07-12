@@ -1,7 +1,13 @@
 [package]
 name = "crates-io-metadata"
+description = "Parse (and scrap) crates.io to retrieve crate informations & metadata"
+authors = ["julien-cpsn"]
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+documentation = "https://github.com/Julien-cpsn/crates-io-metadata"
+homepage = "https://github.com/Julien-cpsn/crates-io-metadata"
+keywords = ["crates_io", "crate", "metadata"]
 
 [features]
 scrap = ["reqwest"]
