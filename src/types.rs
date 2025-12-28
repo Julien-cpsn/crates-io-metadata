@@ -75,7 +75,7 @@ pub struct Version {
     pub homepage: Option<String>,
     pub documentation: Option<String>,
     pub repository: Option<String>,
-    pub trustpub_data: Option<String>,
+    pub trustpub_data: Option<TrustpubData>,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]
@@ -99,6 +99,14 @@ pub struct AuditAction {
     pub action: String,
     pub user: User,
     pub time: String,
+}
+
+#[derive(Default, Debug, Serialize, Deserialize)]
+pub struct TrustpubData {
+    pub provider: String,
+    pub repository: String,
+    pub run_id: String,
+    pub sha: String
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]

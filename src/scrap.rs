@@ -10,6 +10,7 @@ pub async fn scrap(crate_name: impl AsRef<str>) -> Result<CratesIoResponse, Erro
 
     // Debug purpose
     /*
+    println!("{}", crate_name.as_ref());
     println!("{}", &response.text().await.unwrap());
 
     return Ok(CratesIoResponse::default());
